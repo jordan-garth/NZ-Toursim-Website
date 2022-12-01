@@ -1,0 +1,3909 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#welcome {
+  height: 982px;
+  background-image: url("/scss/backgroundPhoto.jpg");
+  background-repeat: none;
+}
+
+#welcome #logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 4em;
+  width: 10%;
+}
+
+#welcome #welcomeHeading {
+  text-align: center;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 800;
+  padding-top: 2em;
+  color: white;
+  font-size: 80px;
+}
+
+#welcome #welcomeText {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  color: white;
+  font-size: 24px;
+  padding-top: 1em;
+}
+
+.pickUp-DropOff {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.pickUp-DropOff .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.pickUp-DropOff .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 24em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.pickUp-DropOff .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.pickUp-DropOff .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 15em;
+  width: 100%;
+  padding-top: 2em;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUpHeading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUp {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUp-Options {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30em;
+  height: 4.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUp-Options::after {
+  content: '\25BC';
+  position: absolute;
+  top: 1em;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUp-Options:hover::after {
+  color: #446F85;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #pickUp-Container #pickUp-Date-Selection-Container #pickUp-Date-Selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20em;
+  height: 3.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOffHeading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOff {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOff-Options {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30em;
+  height: 4.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOff-Options::after {
+  content: '\25BC';
+  position: absolute;
+  top: 1em;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOff-Options:hover::after {
+  color: #446F85;
+}
+
+.pickUp-DropOff #pickUp-DropOff-Container #pickUp-DropOff-Form #dropOff-Container #dropOff-Date-Selection-Container #dropOff-Date-Selection {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 20em;
+  height: 3.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 30em;
+  padding-right: 30em;
+  width: 100%;
+  padding-top: 2em;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  padding-right: 2em;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container {
+  padding-right: 2em;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container #travellersHeading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container #travellers {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container #travellers-Options {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6em;
+  height: 4.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container #travellers-Options::after {
+  content: '\25BC';
+  position: absolute;
+  top: 1em;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #travellers-Container #travellers-Options:hover::after {
+  color: #446F85;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #days-Container #daysHeading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 1em;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #days-Container #days {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: 0 !important;
+  background: white;
+  background-image: none;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  padding: 0 .8em;
+  color: #446F85;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #days-Container #days-Options {
+  margin-top: .5em;
+  margin-bottom: 1.5em;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 6em;
+  height: 4.5em;
+  line-height: 3;
+  background: white;
+  overflow: hidden;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #days-Container #days-Options::after {
+  content: '\25BC';
+  position: absolute;
+  top: 1em;
+  right: 0;
+  padding: 0 1em;
+  background: white;
+  cursor: pointer;
+  pointer-events: none;
+  -webkit-transition: .25s all ease;
+  transition: .25s all ease;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #travellers-Days-Form #days-Container #days-Options:hover::after {
+  color: #446F85;
+}
+
+.pickUp-DropOff #travellers-Days-Search-Container #searchBtn {
+  width: 50%;
+  padding-top: 2.5em;
+}
+
+#card1 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card1 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card1 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card1 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card1 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card1 #card1-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike .motorbike {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-Motorbike #card1-Motorbike-Bottom .motorbike-Btn {
+  margin-right: 2em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar .smallCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card1 #card1-Vehicle-Gallery #card1-SmallCar #card1-SmallCar-Bottom .smallCar-Btn {
+  margin-right: 2em;
+}
+
+#card2 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card2 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card2 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card2 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card2 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card2 #card2-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike .motorbike {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-Motorbike #card2-Motorbike-Bottom .motorbike-Btn {
+  margin-right: 2em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar .smallCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-SmallCar #card2-SmallCar-Bottom .smallCar-Btn {
+  margin-right: 2em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar .largeCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card2 #card2-Vehicle-Gallery #card2-LargeCar #card2-LargeCar-Bottom .largeCar-Btn {
+  margin-right: 2em;
+}
+
+#card3 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card3 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card3 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card3 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card3 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card3 #card3-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar .smallCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-SmallCar #card3-SmallCar-Bottom .smallCar-Btn {
+  margin-right: 2em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar .largeCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card3 #card3-Vehicle-Gallery #card3-LargeCar #card3-LargeCar-Bottom .largeCar-Btn {
+  margin-right: 2em;
+}
+
+#card4 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card4 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card4 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card4 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card4 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card4 #card4-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar .smallCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card4 #card4-Vehicle-Gallery #card4-SmallCar #card4-SmallCar-Bottom .smallCar-Btn {
+  margin-right: 2em;
+}
+
+#card5 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card5 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card5 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card5 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card5 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card5 #card5-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar .smallCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-SmallCar #card5-SmallCar-Bottom .smallCar-Btn {
+  margin-right: 2em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar .largeCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-LargeCar #card5-LargeCar-Bottom .largeCar-Btn {
+  margin-right: 2em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome .motorHome {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card5 #card5-Vehicle-Gallery #card5-MotorHome #card5-MotorHome-Bottom .motorHome-Btn {
+  margin-right: 2em;
+}
+
+#card6 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card6 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card6 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card6 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card6 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card6 #card6-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome .motorHome {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card6 #card6-Vehicle-Gallery #card6-MotorHome #card6-MotorHome-Bottom .motorHome-Btn {
+  margin-right: 2em;
+}
+
+#card7 {
+  background-color: #446F85;
+  height: 982px;
+}
+
+#card7 .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+#card7 .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 27em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+#card7 .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+#card7 .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+#card7 #card7-Vehicle-Gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  padding-left: 6em;
+  padding-right: 6em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-Left {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-Right {
+  padding-top: .5em;
+  color: #446F85;
+  font-size: 50px;
+  padding-top: 3em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar .largeCar {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-LargeCar #card7-LargeCar-Bottom .largeCar-Btn {
+  margin-right: 2em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome {
+  width: 29%;
+  background-color: white;
+  border-radius: 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome .motorHome {
+  width: 100%;
+  border-radius: 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Content {
+  padding-left: 2em;
+  padding-right: 1em;
+  padding-bottom: 2em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Content h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  color: #000000;
+  font-size: 24px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Content h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 15px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding-bottom: 2em;
+  border-radius: 0 0 30px 30px;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Bottom h5 {
+  margin-left: 2em;
+  font-family: "Montserrat", sans-serif;
+  font-size: 16px;
+  color: white;
+  font-weight: 600;
+  padding-top: 2.6em;
+}
+
+#card7 #card7-Vehicle-Gallery #card7-MotorHome #card7-MotorHome-Bottom .motorHome-Btn {
+  margin-right: 2em;
+}
+
+.motorbike-Booking-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.motorbike-Booking-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.motorbike-Booking-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.motorbike-Booking-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.motorbike-Booking-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form #motorbike-Booking-Details-Names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form #motorbike-Booking-Details-Names #motorbike-FirstName {
+  padding-right: 1em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form #motorbike-Booking-Details-Names #motorbike-FirstName .motorbike-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form #motorbike-Booking-Details-Names #motorbike-FirstName .motorbike-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form .motorbike-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info #motorbike-Booking-Details-Container #motorbike-Booking-Details-Form .motorbike-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom .motorbike-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.motorbike-Booking-Details #motorbike-Booking-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom .motorbike-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.motorbike-Payment-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.motorbike-Payment-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.motorbike-Payment-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.motorbike-Payment-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.motorbike-Payment-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Credit-Card-Container {
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  margin-right: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Credit-Card-Container #motorbike-Credit-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Credit-Card-Container #motorbike-Credit-Card h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 2em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Laybuy-Container {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Laybuy-Container #motorbike-Laybuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form #motorbike-Payment-Details-Options #motorbike-Laybuy-Container #motorbike-Laybuy h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 8em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Form .motorbike-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container .motorbike-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-Expiry-Date-Input {
+  padding-right: 1em;
+  width: 100%;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-Expiry-Date-Input .motorbike-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-Expiry-Date-Input .motorbike-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-CVV-Input {
+  width: 100%;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-CVV-Input .motorbike-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info #motorbike-Payment-Details-Container #motorbike-Payment-Details-Bottom #motorbike-CVV-Input .motorbike-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top .motorbike-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom .motorbike-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.motorbike-Payment-Details #motorbike-Payment-Details-Info .motorbike-Vehicle-Details-Container .motorbike-Vehicle-Details .motorbike-Vehicle-Details-Bottom .motorbike-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.motorbike-Booking-Confirmation {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.motorbike-Booking-Confirmation .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container {
+  background-color: white;
+  margin-left: 22em;
+  margin-right: 22em;
+  margin-top: 6em;
+  padding: 3em;
+  border-radius: 12px;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details-Heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details-Heading #motorbike-Final-Booking-Heading {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details-Heading .fa-xmark {
+  font-size: 40px;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details-Text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details-Small-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: #446F85;
+  font-weight: 600;
+  padding-bottom: .8em;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 14em;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: .2em;
+}
+
+.motorbike-Booking-Confirmation #motorbike-Booking-Container #motorbike-Final-Booking-Details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 2em;
+}
+
+.small-Booking-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.small-Booking-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.small-Booking-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.small-Booking-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.small-Booking-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.small-Booking-Details #small-Booking-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form #small-Booking-Details-Names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form #small-Booking-Details-Names #small-FirstName {
+  padding-right: 1em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form #small-Booking-Details-Names #small-FirstName .small-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form #small-Booking-Details-Names #small-FirstName .small-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form .small-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info #small-Booking-Details-Container #small-Booking-Details-Form .small-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom .small-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.small-Booking-Details #small-Booking-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom .small-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.small-Payment-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.small-Payment-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.small-Payment-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.small-Payment-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.small-Payment-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.small-Payment-Details #small-Payment-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Credit-Card-Container {
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  margin-right: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Credit-Card-Container #small-Credit-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Credit-Card-Container #small-Credit-Card h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 2em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Laybuy-Container {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Laybuy-Container #small-Laybuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form #small-Payment-Details-Options #small-Laybuy-Container #small-Laybuy h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 8em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Form .small-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container .small-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-Expiry-Date-Input {
+  padding-right: 1em;
+  width: 100%;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-Expiry-Date-Input .small-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-Expiry-Date-Input .small-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-CVV-Input {
+  width: 100%;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-CVV-Input .small-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info #small-Payment-Details-Container #small-Payment-Details-Bottom #small-CVV-Input .small-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top .small-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom .small-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.small-Payment-Details #small-Payment-Details-Info .small-Vehicle-Details-Container .small-Vehicle-Details .small-Vehicle-Details-Bottom .small-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.small-Booking-Confirmation {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.small-Booking-Confirmation .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.small-Booking-Confirmation #small-Booking-Container {
+  background-color: white;
+  margin-left: 22em;
+  margin-right: 22em;
+  margin-top: 6em;
+  padding: 3em;
+  border-radius: 12px;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details-Heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details-Heading #small-Final-Booking-Heading {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details-Heading .fa-xmark {
+  font-size: 40px;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details-Text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details-Small-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: #446F85;
+  font-weight: 600;
+  padding-bottom: .8em;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 14em;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: .2em;
+}
+
+.small-Booking-Confirmation #small-Booking-Container #small-Final-Booking-Details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 2em;
+}
+
+.large-Booking-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.large-Booking-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.large-Booking-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.large-Booking-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.large-Booking-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.large-Booking-Details #large-Booking-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form #large-Booking-Details-Names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form #large-Booking-Details-Names #large-FirstName {
+  padding-right: 1em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form #large-Booking-Details-Names #large-FirstName .large-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form #large-Booking-Details-Names #large-FirstName .large-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form .large-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info #large-Booking-Details-Container #large-Booking-Details-Form .large-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom .large-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.large-Booking-Details #large-Booking-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom .large-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.large-Payment-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.large-Payment-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.large-Payment-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.large-Payment-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.large-Payment-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.large-Payment-Details #large-Payment-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Credit-Card-Container {
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  margin-right: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Credit-Card-Container #large-Credit-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Credit-Card-Container #large-Credit-Card h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 2em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Laybuy-Container {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Laybuy-Container #large-Laybuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form #large-Payment-Details-Options #large-Laybuy-Container #large-Laybuy h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 8em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Form .large-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container .large-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-Expiry-Date-Input {
+  padding-right: 1em;
+  width: 100%;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-Expiry-Date-Input .large-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-Expiry-Date-Input .large-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-CVV-Input {
+  width: 100%;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-CVV-Input .large-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info #large-Payment-Details-Container #large-Payment-Details-Bottom #large-CVV-Input .large-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top .large-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom .large-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.large-Payment-Details #large-Payment-Details-Info .large-Vehicle-Details-Container .large-Vehicle-Details .large-Vehicle-Details-Bottom .large-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.large-Booking-Confirmation {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.large-Booking-Confirmation .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.large-Booking-Confirmation #large-Booking-Container {
+  background-color: white;
+  margin-left: 22em;
+  margin-right: 22em;
+  margin-top: 6em;
+  padding: 3em;
+  border-radius: 12px;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details-Heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details-Heading #large-Final-Booking-Heading {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details-Heading .fa-xmark {
+  font-size: 40px;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details-Text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details-Small-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: #446F85;
+  font-weight: 600;
+  padding-bottom: .8em;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 14em;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: .2em;
+}
+
+.large-Booking-Confirmation #large-Booking-Container #large-Final-Booking-Details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 2em;
+}
+
+.home-Booking-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.home-Booking-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.home-Booking-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.home-Booking-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.home-Booking-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.home-Booking-Details #home-Booking-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form #home-Booking-Details-Names {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form #home-Booking-Details-Names #home-FirstName {
+  padding-right: 1em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form #home-Booking-Details-Names #home-FirstName .home-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 2em;
+  padding-bottom: 1em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form #home-Booking-Details-Names #home-FirstName .home-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form .home-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info #home-Booking-Details-Container #home-Booking-Details-Form .home-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom .home-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.home-Booking-Details #home-Booking-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom .home-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.home-Payment-Details {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.home-Payment-Details .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.home-Payment-Details .questions {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-left: 15em;
+  padding-right: 43em;
+  padding-top: 2em;
+  padding-bottom: 2em;
+}
+
+.home-Payment-Details .questions .fa-solid {
+  padding-top: .5em;
+  color: white;
+  font-size: 40px;
+}
+
+.home-Payment-Details .questions .questionsHeading {
+  font-size: 64px;
+  font-family: "Work Sans", sans-serif;
+  color: white;
+  text-align: center;
+}
+
+.home-Payment-Details #home-Payment-Details-Info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container {
+  width: 100%;
+  margin-left: 15em;
+  padding-right: 18em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  margin-bottom: 1.5em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Credit-Card-Container {
+  padding: 1em;
+  background-color: white;
+  width: 100%;
+  margin-right: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Credit-Card-Container #home-Credit-Card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Credit-Card-Container #home-Credit-Card h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 2em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Laybuy-Container {
+  width: 100%;
+  padding: 1em;
+  background-color: white;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Laybuy-Container #home-Laybuy {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form #home-Payment-Details-Options #home-Laybuy-Container #home-Laybuy h1 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-right: 8em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Form .home-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container .home-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+  margin-bottom: 2em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-Expiry-Date-Input {
+  padding-right: 1em;
+  width: 100%;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-Expiry-Date-Input .home-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-Expiry-Date-Input .home-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-CVV-Input {
+  width: 100%;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-CVV-Input .home-Form-Heading {
+  color: white;
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 1em;
+  padding-bottom: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info #home-Payment-Details-Container #home-Payment-Details-Bottom #home-CVV-Input .home-Form-Type {
+  width: 100%;
+  height: 4em;
+  padding-left: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container {
+  width: 40%;
+  margin-right: 6em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details {
+  background-color: white;
+  border-radius: 12px;
+  margin-bottom: 2em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top {
+  padding: 1.5em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 20px;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-BookingSummary-Photo {
+  width: 100%;
+  padding: 1em;
+  border-radius: 30px;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top .home-Small-Booking-Container-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Top h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+  padding-bottom: .5em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #70AAC7;
+  padding: 1em;
+  border-radius: 0 0 12px 12px;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom .home-Bottom-Title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.home-Payment-Details #home-Payment-Details-Info .home-Vehicle-Details-Container .home-Vehicle-Details .home-Vehicle-Details-Bottom .home-Bottom-Grand-Total {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+  color: white;
+  font-size: 14px;
+  padding-left: 1em;
+}
+
+.home-Booking-Confirmation {
+  background-color: #446F85;
+  height: 982px;
+}
+
+.home-Booking-Confirmation .logoSide {
+  margin-left: auto;
+  padding-top: 4em;
+  width: 10%;
+  margin-left: 4em;
+}
+
+.home-Booking-Confirmation #home-Booking-Container {
+  background-color: white;
+  margin-left: 22em;
+  margin-right: 22em;
+  margin-top: 6em;
+  padding: 3em;
+  border-radius: 12px;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details-Heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details-Heading #home-Final-Booking-Heading {
+  font-family: "Work Sans", sans-serif;
+  color: #000000;
+  font-weight: 600;
+  font-size: 40px;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details-Heading .fa-xmark {
+  font-size: 40px;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details-Text {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+  padding-top: .5em;
+  padding-bottom: 1em;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details-Small-Heading {
+  font-family: "Work Sans", sans-serif;
+  font-size: 24px;
+  color: #446F85;
+  font-weight: 600;
+  padding-bottom: .8em;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-right: 14em;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details h3 {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  padding-bottom: .2em;
+}
+
+.home-Booking-Confirmation #home-Booking-Container #home-Final-Booking-Details h4 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 100;
+  font-size: 16px;
+  padding-bottom: 2em;
+}
+
+.btnLight01 {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+  cursor: pointer;
+}
+
+.btnLight02 {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #70AAC7;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.motorbike-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 9em;
+  height: 2.5em;
+  color: #70AAC7;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.smallCar-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 9em;
+  height: 2.5em;
+  color: #70AAC7;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.largeCar-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 9em;
+  height: 2.5em;
+  color: #70AAC7;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.motorHome-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 12px;
+  text-decoration: none;
+  font-size: 16px;
+  width: 9em;
+  height: 2.5em;
+  color: #70AAC7;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+.lastBtn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#searchBtnLight01 {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+}
+
+#motorbike-Payment-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#motorbike-Personal-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#small-Payment-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#small-Personal-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#large-Payment-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#large-Personal-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#home-Payment-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+
+#home-Personal-Details-Btn {
+  background-color: white;
+  border: none;
+  border-radius: 18px;
+  text-decoration: none;
+  font-size: 24px;
+  width: 9em;
+  height: 2.5em;
+  color: #446F85;
+  padding-top: .6em;
+  text-align: center;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  display: -ms-grid;
+  display: grid;
+  margin-top: 2em;
+}
+/*# sourceMappingURL=style.css.map */

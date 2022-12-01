@@ -1,0 +1,3263 @@
+@import 'config';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ // SECTION 1
+ #welcome {
+    height: 982px;
+    background-image: url('/scss/backgroundPhoto.jpg');
+    background-repeat: none;
+
+    #logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 4em;
+        width: 10%;
+        }
+
+    #welcomeHeading {
+        text-align: center;
+        font-family: $font-stack;
+        font-weight: 800;
+        padding-top: 2em;
+        color: white;
+        font-size: 80px;
+        }
+
+    #welcomeText {
+        text-align: center;
+        font-family: $font-stack-secondary;
+        font-weight: 100;
+        color: white;
+        font-size: 24px ;
+        padding-top: 1em;
+    }
+}   
+     
+// SECTION 2
+.pickUp-DropOff {
+    background-color: $primary-color;
+    height: 982px;
+
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+     }
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 24em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+ 
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    #pickUp-DropOff-Container {
+
+        #pickUp-DropOff-Form {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 15em;
+            padding-right: 15em;
+            width: 100%;
+            padding-top: 2em;  
+            
+            #pickUp-Container {
+                #pickUpHeading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                }
+
+                #pickUp {
+                    -webkit-appearance:none;
+                    -moz-appearance:none;
+                    -ms-appearance:none;
+                    appearance:none;
+                    outline:0;
+                    box-shadow:none;
+                    border:0!important;
+                    background: white;
+                    background-image: none;
+                    flex: 1;
+                    padding: 0 .8em;
+                    color: $primary-color;
+                    cursor:pointer;
+                    font-size: 24px;
+                    font-family: $font-stack-secondary;
+                }
+
+                #pickUp-Options {
+                    margin-top: .5em;
+                    margin-bottom: 1.5em;
+                    position: relative;
+                    display: flex;
+                    width: 30em;
+                    height: 4.5em;
+                    line-height: 3;
+                    background: white;
+                    overflow: hidden;
+                }
+
+                #pickUp-Options::after {
+                    content: '\25BC';
+                    position: absolute;
+                    top: 1em;
+                    right: 0;
+                    padding: 0 1em;
+                    background: white;
+                    cursor:pointer;
+                    pointer-events:none;
+                    transition:.25s all ease;
+                }
+
+                #pickUp-Options:hover::after {
+                    color: $primary-color;
+                }
+
+                #pickUp-Date-Selection-Container {
+                    #pickUp-Date-Selection {
+                        -webkit-appearance:none;
+                        -moz-appearance:none;
+                        -ms-appearance:none;
+                        appearance:none;
+                        outline:0;
+                        box-shadow:none;
+                        border:0!important;
+                        background: white;
+                        background-image: none;
+                        flex: 1;
+                        padding: 0 .8em;
+                        color: $primary-color;
+                        cursor:pointer;
+                        font-size: 24px;
+                        font-family: $font-stack-secondary;            
+                        position: relative;
+                        display: flex;
+                        width: 20em;
+                        height: 3.5em;
+                        line-height: 3;
+                        background: white;
+                        overflow: hidden;
+                    }
+                }
+            }
+
+            #dropOff-Container {
+                #dropOffHeading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                }
+
+                #dropOff {
+                    -webkit-appearance:none;
+                    -moz-appearance:none;
+                    -ms-appearance:none;
+                    appearance:none;
+                    outline:0;
+                    box-shadow:none;
+                    border:0!important;
+                    background: white;
+                    background-image: none;
+                    flex: 1;
+                    padding: 0 .8em;
+                    color: $primary-color;
+                    cursor:pointer;
+                    font-size: 24px;
+                    font-family: $font-stack-secondary;
+                }
+                
+                #dropOff-Options {
+                    margin-top: .5em;
+                    margin-bottom: 1.5em;
+                    position: relative;
+                    display: flex;
+                    width: 30em;
+                    height: 4.5em;
+                    line-height: 3;
+                    background: white;
+                    overflow: hidden;
+                }
+
+                #dropOff-Options::after {
+                    content: '\25BC';
+                    position: absolute;
+                    top: 1em;
+                    right: 0;
+                    padding: 0 1em;
+                    background: white;
+                    cursor:pointer;
+                    pointer-events:none;
+                    transition:.25s all ease;
+                }
+
+                #dropOff-Options:hover::after {
+                    color: $primary-color;
+                }
+
+                #dropOff-Date-Selection-Container {
+                    #dropOff-Date-Selection {
+                        -webkit-appearance:none;
+                        -moz-appearance:none;
+                        -ms-appearance:none;
+                        appearance:none;
+                        outline:0;
+                        box-shadow:none;
+                        border:0!important;
+                        background: white;
+                        background-image: none;
+                        flex: 1;
+                        padding: 0 .8em;
+                        color: $primary-color;
+                        cursor:pointer;
+                        font-size: 24px;
+                        font-family: $font-stack-secondary;               
+                        position: relative;
+                        display: flex;
+                        width: 20em;
+                        height: 3.5em;
+                        line-height: 3;
+                        background: white;
+                        overflow: hidden;
+                    }
+                }
+            }
+        }
+    }
+    #travellers-Days-Search-Container {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 30em;
+        padding-right: 30em;
+        width: 100%;
+        padding-top: 2em;
+
+       #travellers-Days-Form {
+            display: flex;
+            position: relative;
+            justify-content: space-between;
+            width: 50%;
+            padding-right: 2em;
+
+            #travellers-Container {
+                padding-right: 2em;
+
+                #travellersHeading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                }
+
+                #travellers {
+                    -webkit-appearance:none;
+                    -moz-appearance:none;
+                    -ms-appearance:none;
+                    appearance:none;
+                    outline:0;
+                    box-shadow:none;
+                    border:0!important;
+                    background: white;
+                    background-image: none;
+                    flex: 1;
+                    padding: 0 .8em;
+                    color: $primary-color;
+                    cursor:pointer;
+                    font-size: 24px;
+                    font-family: $font-stack-secondary;
+                }
+
+                #travellers-Options {
+                    margin-top: .5em;
+                    margin-bottom: 1.5em;
+                    position: relative;
+                    display: flex;
+                    width: 6em;
+                    height: 4.5em;
+                    line-height: 3;
+                    background: white;
+                    overflow: hidden;
+                }
+
+                #travellers-Options::after {
+                    content: '\25BC';
+                    position: absolute;
+                    top: 1em;
+                    right: 0;
+                    padding: 0 1em;
+                    background: white;
+                    cursor:pointer;
+                    pointer-events:none;
+                    transition:.25s all ease;
+                }
+
+                #travellers-Options:hover::after {
+                    color: $primary-color;
+                }
+            }
+
+            #days-Container {
+                #daysHeading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 26px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                }
+
+                #days {
+                    -webkit-appearance:none;
+                    -moz-appearance:none;
+                    -ms-appearance:none;
+                    appearance:none;
+                    outline:0;
+                    box-shadow:none;
+                    border:0!important;
+                    background: white;
+                    background-image: none;
+                    flex: 1;
+                    padding: 0 .8em;
+                    color: $primary-color;
+                    cursor:pointer;
+                    font-size: 24px;
+                    font-family: $font-stack-secondary;
+                }  
+
+                #days-Options {
+                    margin-top: .5em;
+                    margin-bottom: 1.5em;
+                    position: relative;
+                    display: flex;
+                    width: 6em;
+                    height: 4.5em;
+                    line-height: 3;
+                    background: white;
+                    overflow: hidden;
+                }
+
+                #days-Options::after {
+                    content: '\25BC';
+                    position: absolute;
+                    top: 1em;
+                    right: 0;
+                    padding: 0 1em;
+                    background: white;
+                    cursor:pointer;
+                    pointer-events:none;
+                    transition:.25s all ease;
+                }
+
+                #days-Options:hover::after {
+                    color: $primary-color;
+                }
+            }
+        }
+
+        #searchBtn {
+            width: 50%;
+            padding-top: 2.5em;
+        }
+    }
+}    
+// Section 3
+// CARD 1
+#card1 {
+    background-color: $primary-color;
+    height: 982px; 
+
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }  
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    #card1-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+
+        #card1-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+
+        #card1-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+
+        #card1-Motorbike {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px; 
+
+            .motorbike {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card1-Motorbike-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+
+            #card1-Motorbike-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+
+                .motorbike-Btn {
+                     margin-right: 2em;
+                }
+            }
+        }
+
+        #card1-SmallCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+
+            .smallCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card1-SmallCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+
+            #card1-SmallCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+
+                .smallCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+} 
+
+// CARD 2
+#card2 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+      
+    }
+  
+    #card2-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card2-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card2-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card2-Motorbike {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .motorbike {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card2-Motorbike-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card2-Motorbike-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .motorbike-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card2-SmallCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+
+            .smallCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card2-SmallCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }  
+
+            #card2-SmallCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;  
+
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                } 
+
+                .smallCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card2-LargeCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;  
+
+            .largeCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card2-LargeCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+
+              #card2-LargeCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px; 
+
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }  
+
+                .largeCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+// CARD 3
+#card3 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+      
+    }
+  
+    #card3-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card3-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card3-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card3-SmallCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .smallCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card3-SmallCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card3-SmallCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .smallCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card3-LargeCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .largeCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card3-LargeCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card3-LargeCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .largeCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+// CARD 4
+#card4 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+      
+    }
+  
+    #card4-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card4-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card4-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card4-SmallCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .smallCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card4-SmallCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card4-SmallCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .smallCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+// CARD 5
+#card5 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+  
+    #card5-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card5-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card5-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card5-SmallCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .smallCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card5-SmallCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card5-SmallCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .smallCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card5-LargeCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .largeCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card5-LargeCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card5-LargeCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .largeCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card5-MotorHome {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .motorHome {
+                 width: 100%;
+                border-radius: 30px;
+            }
+
+            #card5-MotorHome-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card5-MotorHome-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .motorHome-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+// CARD 6
+#card6 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+      
+    }
+  
+#card6-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card6-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card6-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card6-MotorHome {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .motorHome {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card6-MotorHome-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card6-MotorHome-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .motorHome-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+// CARD 7
+#card7 {
+    background-color: $primary-color;
+    height: 982px;
+      
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+      
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 27em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+      
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+      
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+      
+    }
+  
+    #card7-Vehicle-Gallery {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        padding-left: 6em;
+        padding-right: 6em;
+  
+        #card7-Left {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card7-Right {
+            padding-top: .5em;
+            color: $primary-color;
+            font-size: 50px; 
+            padding-top: 3em;
+        }
+  
+        #card7-LargeCar {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .largeCar {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card7-LargeCar-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card7-LargeCar-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .largeCar-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+
+        #card7-MotorHome {
+            width: 29%;
+            background-color: white;
+            border-radius: 30px;
+              
+            .motorHome {
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            #card7-MotorHome-Content {
+                padding-left: 2em;
+                padding-right: 1em;
+                padding-bottom: 2em;
+
+                h3 {
+                    font-family: $font-stack;
+                    font-weight: 500;
+                    color: $secondary-color;
+                    font-size: 24px;
+                }
+
+                h4 {
+                    font-family: $font-stack-secondary;
+                    font-weight: 100;
+                    font-size: 15px;
+                }
+            }
+  
+            #card7-MotorHome-Bottom {
+                display: flex;
+                justify-content: space-between;
+                background-color: $light-color;
+                padding-bottom: 2em;
+                border-radius: 0 0 30px 30px;
+  
+                h5 {
+                    margin-left: 2em;
+                    font-family: $font-stack-secondary;
+                    font-size: 16px;
+                    color: white;
+                    font-weight: 600;
+                    padding-top: 2.6em;
+                }
+  
+                .motorHome-Btn {
+                    margin-right: 2em;
+                }
+            }
+        }
+    }
+}
+
+ // SECTION 4
+// MOTORBIKE BOOKING
+.motorbike-Booking-Details {
+    background-color: $primary-color;
+    height: 982px;
+
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+
+    #motorbike-Booking-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        #motorbike-Booking-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+
+            #motorbike-Booking-Details-Form {
+                #motorbike-Booking-Details-Names {
+                    display: flex;
+                    justify-content: space-between;
+
+                    #motorbike-FirstName {
+                        padding-right: 1em;
+                        .motorbike-Form-Heading {
+                            color: white;
+                            font-family: $font-stack;
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 2em;
+                            padding-bottom: 1em;
+                        }
+
+                        .motorbike-Form-Type {
+                            width: 100%;
+                            height: 4em;
+                            padding-left: 1em;
+
+                        }
+                    }
+                }
+
+                .motorbike-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                }
+
+                .motorbike-Form-Type {
+                    width: 100%;
+                    height: 4em;
+                    padding-left: 1em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+
+        .motorbike-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+
+            .motorbike-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+  
+                .motorbike-Vehicle-Details-Top {
+                    padding: 1.5em;
+  
+                    .motorbike-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;       
+                    }
+  
+                    .motorbike-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                        }
+  
+                      
+                    .motorbike-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                        }
+                       
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;
+                          
+                    }
+                }
+  
+                .motorbike-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+  
+                    .motorbike-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                         font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+
+                    .motorbike-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                         font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }  
+    }
+}
+// MOTORBIKE PAYMENT
+.motorbike-Payment-Details {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+    
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+    
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    
+    }
+
+    #motorbike-Payment-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+
+        #motorbike-Payment-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+
+            #motorbike-Payment-Details-Form {
+                #motorbike-Payment-Details-Options {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 1.5em;
+                    
+                    #motorbike-Credit-Card-Container {
+                        padding: 1em;
+                        background-color: white;
+                        width: 100%;
+                        margin-right: 1em;
+
+                        #motorbike-Credit-Card {
+                            display: flex;
+                            justify-content: space-between;
+
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 2em;
+                            }
+                        }
+                    }
+                    
+                    #motorbike-Laybuy-Container {
+                        width: 100%;
+                        padding: 1em;
+                        background-color: white;
+
+                        #motorbike-Laybuy{
+                            display: flex;
+                            justify-content: space-between;
+
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 8em;
+                            }
+                        }
+                    } 
+                }
+
+                .motorbike-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                } 
+            }
+
+            .motorbike-Form-Type {
+                width: 100%;
+                height: 4em;
+                padding-left: 1em;
+                margin-bottom: 2em;
+            }
+
+            #motorbike-Payment-Details-Bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                    
+                #motorbike-Expiry-Date-Input {
+                    padding-right: 1em;
+                    width: 100%;
+                    .motorbike-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+
+                    .motorbike-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }  
+                    
+                #motorbike-CVV-Input {
+                    width: 100%;
+                    .motorbike-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+
+                    .motorbike-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+     
+        .motorbike-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .motorbike-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+      
+                .motorbike-Vehicle-Details-Top {
+                    padding: 1.5em;
+      
+                    .motorbike-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;
+                              
+                    }
+      
+                    .motorbike-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                    }
+      
+                          
+                    .motorbike-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                     
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;
+                              
+                    }
+                }
+      
+                .motorbike-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+      
+                    .motorbike-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+    
+                    .motorbike-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }   
+    }
+}
+
+    // MOTORBIKE CONFIRMATION
+.motorbike-Booking-Confirmation {
+    background-color: $primary-color;
+    height: 982px;
+
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+
+    #motorbike-Booking-Container {
+        background-color: white;
+        margin-left: 22em;
+        margin-right: 22em;
+        margin-top: 6em;
+        padding:3em;
+        border-radius: 12px;
+
+        #motorbike-Final-Booking-Details-Heading {
+            display: flex;
+            justify-content: space-between;
+
+            #motorbike-Final-Booking-Heading {
+                font-family: $font-stack;
+                color: $secondary-color;
+                font-weight: 600;
+                font-size: 40px;
+            }
+
+            .fa-xmark {
+                font-size: 40px;
+
+            }
+        }
+
+        #motorbike-Final-Booking-Details-Text {
+           font-family: $font-stack-secondary;
+           font-size: 20px;
+           padding-top: .5em;
+           padding-bottom: 1em;
+        }
+
+        #motorbike-Final-Booking-Details-Small-Heading {
+            font-family: $font-stack;
+            font-size: 24px;
+            color: $primary-color;
+            font-weight: 600;
+            padding-bottom: .8em;
+        }
+
+        #motorbike-Final-Booking-Details {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 14em;
+
+            h3 {
+                font-family: $font-stack;
+                font-weight: 500;
+                font-size: 20px;
+                padding-bottom: .2em;
+            }
+
+            h4 {
+                font-family: $font-stack-secondary;
+                font-weight: 100;
+                font-size: 16px;
+                padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+// SMALL CAR BOOKING
+.small-Booking-Details {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+    
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    
+    }
+    
+    #small-Booking-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #small-Booking-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+            #small-Booking-Details-Form {
+                #small-Booking-Details-Names {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    #small-FirstName {
+                        padding-right: 1em;
+                        .small-Form-Heading {
+                            color: white;
+                            font-family: $font-stack;
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 2em;
+                            padding-bottom: 1em;
+                        }
+    
+                        .small-Form-Type {
+                            width: 100%;
+                            height: 4em;
+                            padding-left: 1em;
+    
+                        }
+                    }
+                }
+    
+                .small-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                }
+    
+                .small-Form-Type {
+                    width: 100%;
+                    height: 4em;
+                    padding-left: 1em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    
+        .small-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .small-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+      
+                .small-Vehicle-Details-Top {
+                    padding: 1.5em;
+      
+                    .small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;      
+                    }
+      
+                    .small-BookingSummary-Photo{
+                         width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                        }
+      
+                          
+                    .small-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                                                        
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;        
+                    }
+                }
+      
+                .small-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+      
+                    .small-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+    
+                    .small-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }  
+    }
+}
+// SMALL CAR PAYMENT
+.small-Payment-Details {
+    background-color: $primary-color;
+    height: 982px;
+        
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+        
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+        
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+    
+    #small-Payment-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #small-Payment-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+    
+            #small-Payment-Details-Form {
+                #small-Payment-Details-Options {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 1.5em;
+                        
+                    #small-Credit-Card-Container {
+                        padding: 1em;
+                        background-color: white;
+                        width: 100%;
+                        margin-right: 1em;
+    
+                        #small-Credit-Card {
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 2em;
+                            }
+                        }
+                    }
+                        
+                    #small-Laybuy-Container {
+                        width: 100%;
+                        padding: 1em;
+                        background-color: white;
+    
+                        #small-Laybuy{
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 8em;
+                            }
+                        }
+                    } 
+                }
+    
+                .small-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                } 
+            }
+    
+            .small-Form-Type {
+                width: 100%;
+                height: 4em;
+                padding-left: 1em;
+                margin-bottom: 2em;
+            }
+    
+            #small-Payment-Details-Bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                        
+                #small-Expiry-Date-Input {
+                    padding-right: 1em;
+                    width: 100%;
+                    .small-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .small-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }  
+                        
+                #small-CVV-Input {
+                    width: 100%;
+                    .small-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .small-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+                
+        .small-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .small-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+          
+                .small-Vehicle-Details-Top {
+                    padding: 1.5em;
+          
+                    .small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;          
+                    }
+          
+                    .small-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                    }
+                  
+                    .small-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;          
+                    }
+                }
+          
+                .small-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+          
+                    .small-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+        
+                    .small-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }   
+    }
+}
+    
+// SMALL CAR CONFIRM
+.small-Booking-Confirmation {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    #small-Booking-Container {
+        background-color: white;
+        margin-left: 22em;
+        margin-right: 22em;
+        margin-top: 6em;
+        padding:3em;
+        border-radius: 12px;
+    
+        #small-Final-Booking-Details-Heading {
+            display: flex;
+            justify-content: space-between;
+    
+            #small-Final-Booking-Heading {
+                font-family: $font-stack;
+                color: $secondary-color;
+                font-weight: 600;
+                font-size: 40px;
+            }
+    
+            .fa-xmark {
+                font-size: 40px;
+            }
+        }
+    
+        #small-Final-Booking-Details-Text {
+            font-family: $font-stack-secondary;
+            font-size: 20px;
+            padding-top: .5em;
+            padding-bottom: 1em;
+        }
+    
+        #small-Final-Booking-Details-Small-Heading {
+            font-family: $font-stack;
+            font-size: 24px;
+            color: $primary-color;
+            font-weight: 600;
+            padding-bottom: .8em;
+        }
+    
+        #small-Final-Booking-Details {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 14em;
+    
+            h3 {
+                font-family: $font-stack;
+                font-weight: 500;
+                font-size: 20px;
+                padding-bottom: .2em;
+            }
+    
+            h4 {
+                font-family: $font-stack-secondary;
+                font-weight: 100;
+                font-size: 16px;
+                padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+// LARGE CAR BOOKING
+.large-Booking-Details {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+    
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    
+    }
+    
+    #large-Booking-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #large-Booking-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+            #large-Booking-Details-Form {
+                #large-Booking-Details-Names {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    #large-FirstName {
+                        padding-right: 1em;
+                        .large-Form-Heading {
+                            color: white;
+                            font-family: $font-stack;
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 2em;
+                            padding-bottom: 1em;
+                        }
+    
+                        .large-Form-Type {
+                            width: 100%;
+                            height: 4em;
+                            padding-left: 1em;
+    
+                        }
+                    }
+                }
+    
+                .large-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                }
+    
+                .large-Form-Type {
+                    width: 100%;
+                    height: 4em;
+                    padding-left: 1em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    
+        .large-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .large-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+      
+                .large-Vehicle-Details-Top {
+                    padding: 1.5em;
+      
+                    .large-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;      
+                    }
+      
+                    .large-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                        }
+      
+                          
+                    .large-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                                                        
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;        
+                    }
+                }
+      
+                .large-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+      
+                    .large-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+    
+                    .large-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }  
+    }
+}
+// LARGE CAR PAYMENT
+.large-Payment-Details {
+    background-color: $primary-color;
+    height: 982px;
+        
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+        
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+        
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+    
+    #large-Payment-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #large-Payment-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+    
+            #large-Payment-Details-Form {
+                #large-Payment-Details-Options {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 1.5em;
+                        
+                    #large-Credit-Card-Container {
+                        padding: 1em;
+                        background-color: white;
+                        width: 100%;
+                        margin-right: 1em;
+    
+                        #large-Credit-Card {
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 2em;
+                            }
+                        }
+                    }
+                        
+                    #large-Laybuy-Container {
+                        width: 100%;
+                        padding: 1em;
+                        background-color: white;
+    
+                        #large-Laybuy{
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 8em;
+                            }
+                        }
+                    } 
+                }
+    
+                .large-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                } 
+            }
+    
+            .large-Form-Type {
+                width: 100%;
+                height: 4em;
+                padding-left: 1em;
+                margin-bottom: 2em;
+            }
+    
+            #large-Payment-Details-Bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                        
+                #large-Expiry-Date-Input {
+                    padding-right: 1em;
+                    width: 100%;
+                    .large-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .large-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }  
+                        
+                #large-CVV-Input {
+                    width: 100%;
+                    .large-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .large-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+                
+        .large-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .large-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+          
+                .large-Vehicle-Details-Top {
+                    padding: 1.5em;
+          
+                    .large-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;          
+                    }
+          
+                    .large-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                    }
+                  
+                    .large-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;          
+                    }
+                }
+          
+                .large-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+          
+                    .large-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+        
+                    .large-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }   
+    }
+}
+    
+// LARGE CAR CONFIRM
+.large-Booking-Confirmation {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    #large-Booking-Container {
+        background-color: white;
+        margin-left: 22em;
+        margin-right: 22em;
+        margin-top: 6em;
+        padding:3em;
+        border-radius: 12px;
+    
+        #large-Final-Booking-Details-Heading {
+            display: flex;
+            justify-content: space-between;
+    
+            #large-Final-Booking-Heading {
+                font-family: $font-stack;
+                color: $secondary-color;
+                font-weight: 600;
+                font-size: 40px;
+            }
+    
+            .fa-xmark {
+                font-size: 40px;
+            }
+        }
+    
+        #large-Final-Booking-Details-Text {
+            font-family: $font-stack-secondary;
+            font-size: 20px;
+            padding-top: .5em;
+            padding-bottom: 1em;
+        }
+    
+        #large-Final-Booking-Details-Small-Heading {
+            font-family: $font-stack;
+            font-size: 24px;
+            color: $primary-color;
+            font-weight: 600;
+            padding-bottom: .8em;
+        }
+    
+        #large-Final-Booking-Details {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 14em;
+    
+            h3 {
+                font-family: $font-stack;
+                font-weight: 500;
+                font-size: 20px;
+                padding-bottom: .2em;
+            }
+    
+            h4 {
+                font-family: $font-stack-secondary;
+                font-weight: 100;
+                font-size: 16px;
+                padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+// MOTOR HOME BOOKING
+.home-Booking-Details {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+    
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+    
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    
+    }
+    
+    #home-Booking-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #home-Booking-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+            #home-Booking-Details-Form {
+                #home-Booking-Details-Names {
+                    display: flex;
+                    justify-content: space-between;
+    
+                    #home-FirstName {
+                        padding-right: 1em;
+                        .home-Form-Heading {
+                            color: white;
+                            font-family: $font-stack;
+                            font-size: 24px;
+                            font-weight: 500;
+                            margin-bottom: 2em;
+                            padding-bottom: 1em;
+                        }
+    
+                        .home-Form-Type {
+                            width: 100%;
+                            height: 4em;
+                            padding-left: 1em;
+    
+                        }
+                    }
+                }
+    
+                .home-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                }
+    
+                .home-Form-Type {
+                    width: 100%;
+                    height: 4em;
+                    padding-left: 1em;
+                    margin-bottom: 2em;
+                }
+            }
+        }
+    
+        .home-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .home-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+      
+                .home-Vehicle-Details-Top {
+                    padding: 1.5em;
+      
+                    .home-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;      
+                    }
+      
+                    .home-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                        }
+      
+                          
+                    .home-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                                                        
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;        
+                    }
+                }
+      
+                .home-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+      
+                    .home-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+    
+                    .home-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }  
+    }
+}
+// MOTOR HOME PAYMENT
+.home-Payment-Details {
+    background-color: $primary-color;
+    height: 982px;
+        
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%; 
+        margin-left: 4em;
+    }
+        
+    .questions {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 15em;
+        padding-right: 43em;
+        padding-top: 2em;
+        padding-bottom: 2em;
+        
+        .fa-solid {
+            padding-top: .5em;
+            color: white;
+            font-size: 40px;
+        }
+        
+        .questionsHeading {
+            font-size: 64px;
+            font-family: $font-stack;
+            color: white;
+            text-align: center;
+        }
+    }
+    
+    #home-Payment-Details-Info {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    
+        #home-Payment-Details-Container {
+            width: 100%;
+            margin-left: 15em;
+            padding-right: 18em;
+    
+            #home-Payment-Details-Form {
+                #home-Payment-Details-Options {
+                    display: flex;
+                    justify-content: space-between;
+                    width: 100%;
+                    margin-bottom: 1.5em;
+                        
+                    #home-Credit-Card-Container {
+                        padding: 1em;
+                        background-color: white;
+                        width: 100%;
+                        margin-right: 1em;
+    
+                        #home-Credit-Card {
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 2em;
+                            }
+                        }
+                    }
+                        
+                    #home-Laybuy-Container {
+                        width: 100%;
+                        padding: 1em;
+                        background-color: white;
+    
+                        #home-Laybuy{
+                            display: flex;
+                            justify-content: space-between;
+    
+                            h1 {
+                                font-family: $font-stack;
+                                font-weight: 500;
+                                font-size: 20px;
+                                padding-right: 8em;
+                            }
+                        }
+                    } 
+                }
+    
+                .home-Form-Heading {
+                    color: white;
+                    font-family: $font-stack;
+                    font-size: 24px;
+                    font-weight: 500;
+                    margin-bottom: 1em;
+                    padding-bottom: 1em;
+                } 
+            }
+    
+            .home-Form-Type {
+                width: 100%;
+                height: 4em;
+                padding-left: 1em;
+                margin-bottom: 2em;
+            }
+    
+            #home-Payment-Details-Bottom {
+                display: flex;
+                justify-content: space-between;
+                width: 100%;
+                        
+                #home-Expiry-Date-Input {
+                    padding-right: 1em;
+                    width: 100%;
+                    .home-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .home-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }  
+                        
+                #home-CVV-Input {
+                    width: 100%;
+                    .home-Form-Heading {
+                        color: white;
+                        font-family: $font-stack;
+                        font-size: 24px;
+                        font-weight: 500;
+                        margin-bottom: 1em;
+                        padding-bottom: 1em;
+                    }
+    
+                    .home-Form-Type {
+                        width: 100%;
+                        height: 4em;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }
+                
+        .home-Vehicle-Details-Container {
+            width: 40%;
+            margin-right: 6em;
+            .home-Vehicle-Details {
+                background-color: white;
+                border-radius: 12px;
+                margin-bottom: 2em;
+          
+                .home-Vehicle-Details-Top {
+                    padding: 1.5em;
+          
+                    .home-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-size: 20px;          
+                    }
+          
+                    .home-BookingSummary-Photo{
+                        width: 100%;
+                        padding: 1em;
+                        border-radius: 30px;
+                    }
+                  
+                    .home-Small-Booking-Container-Heading {
+                        font-family: $font-stack;
+                        font-weight: 500;
+                        font-size: 16px;
+                    }
+                    
+                    h6 {
+                        font-family: $font-stack-secondary;
+                        font-weight: 100;
+                        font-size: 14px; 
+                        padding-bottom: .5em;          
+                    }
+                }
+          
+                .home-Vehicle-Details-Bottom {
+                    display: flex;
+                    justify-content: space-between;
+                    background-color: $light-color;
+                    padding: 1em;
+                    border-radius: 0 0 12px 12px;
+          
+                    .home-Bottom-Title {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+        
+                    .home-Bottom-Grand-Total {
+                        font-family: $font-stack-secondary;
+                        font-weight: 700;
+                        color: white;
+                        font-size: 14px;
+                        padding-left: 1em;
+                    }
+                }
+            }
+        }   
+    }
+}
+    
+// MOTOR HOME CONFIRM
+.home-Booking-Confirmation {
+    background-color: $primary-color;
+    height: 982px;
+    
+    .logoSide {
+        margin-left: auto;
+        padding-top: 4em;
+        width: 10%;
+        margin-left: 4em;
+    }
+    
+    #home-Booking-Container {
+        background-color: white;
+        margin-left: 22em;
+        margin-right: 22em;
+        margin-top: 6em;
+        padding:3em;
+        border-radius: 12px;
+    
+        #home-Final-Booking-Details-Heading {
+            display: flex;
+            justify-content: space-between;
+    
+            #home-Final-Booking-Heading {
+                font-family: $font-stack;
+                color: $secondary-color;
+                font-weight: 600;
+                font-size: 40px;
+            }
+    
+            .fa-xmark {
+                font-size: 40px;
+            }
+        }
+    
+        #home-Final-Booking-Details-Text {
+            font-family: $font-stack-secondary;
+            font-size: 20px;
+            padding-top: .5em;
+            padding-bottom: 1em;
+        }
+    
+        #home-Final-Booking-Details-Small-Heading {
+            font-family: $font-stack;
+            font-size: 24px;
+            color: $primary-color;
+            font-weight: 600;
+            padding-bottom: .8em;
+        }
+    
+        #home-Final-Booking-Details {
+            display: flex;
+            justify-content: space-between;
+            padding-right: 14em;
+    
+            h3 {
+                font-family: $font-stack;
+                font-weight: 500;
+                font-size: 20px;
+                padding-bottom: .2em;
+            }
+    
+            h4 {
+                font-family: $font-stack-secondary;
+                font-weight: 100;
+                font-size: 16px;
+                padding-bottom: 2em;
+            }
+        }
+    }
+}
+
+
+
+
+    
+
+
+@import 'buttons';

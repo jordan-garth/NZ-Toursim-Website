@@ -1,0 +1,1237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transport Booking Application</title>
+
+    <link rel="stylesheet" href="scss/style.css">
+    <link rel="stylesheet" href="css/toastr.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    
+    <script src="https://kit.fontawesome.com/8f4ef9a994.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+   
+</head>
+<body>
+
+    <!-- Websites screen dimensions are 1524x982 -->
+
+    <!-- SECTION 1 -->
+    <section id="welcome">
+        <img id="logo" src="img/logo.png" alt="logo">
+        <h1 id="welcomeHeading">Explore <br> 
+            New Zealand with us!
+        </h1>
+        <p id="welcomeText">With so many things to do and spectacular places to see, choosing how you<br>travel around New Zealand is as important as choosing where you want to go.</p>
+        <button onclick="startNavigate()" class="btnLight01">Start</button>
+    </section>
+
+    <!-- SECTION 2 -->
+    <section class="pickUp-DropOff">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackToWelcome()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Where is your start and<br>end destinations?</h1>
+        </div>
+
+        <div id="pickUp-DropOff-Container">
+
+            <form id="pickUp-DropOff-Form" action="#">
+
+                <div id="pickUp-Container">
+
+                    <label id="pickUpHeading" for="pickUp">Pick Up</label>
+                    <div id="pickUp-Options">
+                       <select id="pickUp">
+                        <option id="pickUp-Chch" value="ChristchurchAirport">Christchurch Aiport</option>
+                        <option id="pickUp-Auck" value="AucklandAirport">Auckland Airport</option>
+                        <option id="pickUp-Wgn" value="WellingtonAirport">Wellington Airport</option>
+                        <option id="pickUp-Qtn" value="QueenstownAirport">Queenstown Airport</option>
+                        <option id="pickUp-Dun" value="DunedinAirport">Dunedin Airport</option>
+                      </select>
+                    </div>
+
+                </div>
+
+                <div id="dropOff-Container">
+                    <label id="dropOffHeading" for="dropOff">Drop Off</label>
+                    <div id="dropOff-Options">
+                        <select name="dropOff" id="dropOff">
+                        <option id="dropOff-Chch" value="ChristchurchAirport">Christchurch Aiport</option>
+                        <option id="dropOff-Auck" value="AucklandAirport">Auckland Airport</option>
+                        <option id="dropOff-Wgn" value="WellingtonAirport">Wellington Airport</option>
+                        <option id="dropOff-Qtn" value="QueenstownAirport">Queenstown Airport</option>
+                        <option id="dropOff-Dun" value="DunedinAirport">Dunedin Airport</option>
+                      </select>
+                    </div>
+                    
+                </div>
+            </form>
+
+            
+
+            <div id="travellers-Days-Search-Container">
+
+                
+                <form id="travellers-Days-Form" action="#">
+
+                    <div id="travellers-Container">
+                        <label id="travellersHeading" for="travellers">Travellers</label>
+                        <div id="travellers-Options">
+                          <select name="travellers" id="travellers">
+                            <option selected disabled>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                          </select>
+                        </div>
+                    </div>
+
+                    <div id="days-Container">
+                        <label id="daysHeading" for="travellers">Days</label>
+                        <div id="days-Options">
+                          <select name="days" id="days">
+                            <option class="disabled" selected disabled>0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                            <option value="10">10</option>
+                            <option value="11">11</option>
+                            <option value="12">12</option>
+                            <option value="13">13</option>
+                            <option value="14">14</option>
+                            <option value="15">15</option>
+                          </select>
+                        </div>
+                    </div>
+                    
+                </form>
+
+                <div id="searchBtn">
+                    <button id="searchBtnLight01">Search</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+     
+
+    <!-- SECTION 2 -->
+    <!-- Card 1 -->
+    <section id="card1">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card1-Vehicle-Gallery">
+
+            <div id="card1-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card1-Motorbike">
+                <img class="motorbike" src="img/motorbike.jpg" alt="motorbike">
+                <div id="card1-Motorbike-Content">
+                    <h3>Motorbike</h3>
+                    <h4>1 Seater</h4>
+                </div>
+                <div id="card1-Motorbike-Bottom">
+                    <h5 class="motorBike-price-Per-Day">$109.00 NZD / Day</h5>
+                    <button class="motorbike-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card1-SmallCar">
+                <img class="smallCar" src="img/smallCar01.jpg" alt="smallCar">
+                <div id="card1-SmallCar-Content">
+                    <h3>Small Car</h3>
+                        <h4>2 Seater</h4>
+                </div>
+                <div id="card1-SmallCar-Bottom">
+                    <h5 class="smallCar-price-Per-Day">$129.00 NZD / Day</h5>
+                    <button class="smallCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card1-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 2 -->
+    <section id="card2">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card2-Vehicle-Gallery">
+
+            <div id="card2-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card2-Motorbike">
+                <img class="motorbike" src="img/motorbike.jpg" alt="motorbike">
+                <div id="card2-Motorbike-Content">
+                    <h3>Motorbike</h3>
+                    <h4>1 Seater</h4>
+                </div>
+                <div id="card2-Motorbike-Bottom">
+                    <h5 class="motorBike-price-Per-Day">$109.00 NZD / Day</h5>
+                    <button class="motorbike-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card2-SmallCar">
+                <img class="smallCar" src="img/smallCar01.jpg" alt="smallCar">
+                <div id="card2-SmallCar-Content">
+                    <h3>Small Car</h3>
+                    <h4>2 Seater</h4>
+                </div>
+                <div id="card2-SmallCar-Bottom">
+                    <h5 class="smallCar-price-Per-Day">$129.00 NZD / Day</h5>
+                    <button class="smallCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card2-LargeCar">
+                <img class="largeCar" src="img/largeCar01.jpg" alt="largeCar">
+                <div id="card2-LargeCar-Content">
+                    <h3>Large Car</h3>
+                    <h4>5 Seater</h4>
+                </div>
+                <div id="card2-LargeCar-Bottom">
+                    <h5 class="largeCar-price-Per-Day">$144.00 NZD / Day</h5>
+                    <button class="largeCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card2-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 3 -->
+    <section id="card3">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card3-Vehicle-Gallery">
+
+            <div id="card3-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card3-SmallCar">
+                <img class="smallCar" src="img/smallCar01.jpg" alt="smallCar">
+                <div id="card3-SmallCar-Content">
+                    <h3>Small Car</h3>
+                    <h4>2 Seater</h4>
+                </div>
+                <div id="card3-SmallCar-Bottom">
+                    <h5 class="smallCar-price-Per-Day">$129.00 NZD / Day</h5>
+                    <button class="smallCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card3-LargeCar">
+                <img class="largeCar" src="img/largeCar01.jpg" alt="largeCar">
+                <div id="card3-LargeCar-Content">
+                    <h3>Large Car</h3>
+                    <h4>5 Seater</h4>
+                </div>
+                <div id="card3-LargeCar-Bottom">
+                    <h5 class="largeCar-price-Per-Day">$144.00 NZD / Day</h5>
+                    <button class="largeCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card3-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 4 -->
+    <section id="card4">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card4-Vehicle-Gallery">
+
+            <div id="card4-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card4-SmallCar">
+                <img class="smallCar" src="img/smallCar01.jpg" alt="smallCar">
+                <div id="card4-SmallCar-Content">
+                    <h3>Small Car</h3>
+                    <h4>2 Seater</h4>
+                </div>
+                <div id="card4-SmallCar-Bottom">
+                    <h5 class="smallCar-price-Per-Day">$129.00 NZD / Day</h5>
+                    <button class="smallCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card4-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 5 -->
+    <section id="card5">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card5-Vehicle-Gallery">
+
+            <div id="card5-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card5-SmallCar">
+                <img class="smallCar" src="img/smallCar01.jpg" alt="smallCar">
+                <div id="card5-SmallCar-Content">
+                    <h3>Small Car</h3>
+                    <h4>2 Seater</h4>
+                </div>
+                <div id="card5-SmallCar-Bottom">
+                    <h5 class="smallCar-price-Per-Day">$129.00 NZD / Day</h5>
+                    <button class="smallCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card5-LargeCar">
+                <img class="largeCar" src="img/largeCar01.jpg" alt="largeCar">
+                <div id="card5-LargeCar-Content">
+                    <h3>Large Car</h3>
+                    <h4>5 Seater</h4>
+                </div>
+                <div id="card5-LargeCar-Bottom">
+                    <h5 class="largeCar-price-Per-Day">$144.00 NZD / Day</h5>
+                    <button class="largeCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card5-MotorHome">
+                <img class="motorHome" src="img/motorHome.jpg" alt="motorHome">
+                <div id="card5-MotorHome-Content">
+                    <h3>Motor Home</h3>
+                    <h4>6 Seater</h4>
+                </div>
+                <div id="card5-MotorHome-Bottom">
+                    <h5 class="motorHome-price-Per-Day">$200.00 NZD / Day</h5>
+                    <button class="motorHome-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card5-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 6 -->
+    <section id="card6">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card6-Vehicle-Gallery">
+
+            <div id="card6-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card6-MotorHome">
+                <img class="motorHome" src="img/motorHome.jpg" alt="motorHome">
+                <div id="card6-MotorHome-Content">
+                    <h3>Motor Home</h3>
+                        <h4>6 Seater</h4>
+                </div>
+                <div id="card6-MotorHome-Bottom">
+                    <h5 class="motorHome-price-Per-Day">$200.00 NZD / Day</h5>
+                    <button class="motorHome-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card6-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Card 7 -->
+    <section id="card7">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="goBackLocationForm()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Transport Options</h1>
+        </div>
+
+        <div id="card7-Vehicle-Gallery">
+
+            <div id="card7-Left">
+                <i class="fa-solid fa-angle-left"></i>
+            </div>
+
+            <div id="card7-LargeCar">
+                <img class="largeCar" src="img/largeCar01.jpg" alt="largeCar">
+                <div id="card7-LargeCar-Content">
+                    <h3>Large Car</h3>
+                    <h4>5 Seater</h4>
+                </div>
+                <div id="card7-LargeCar-Bottom">
+                    <h5 class="largeCar-price-Per-Day">$144.00 NZD / Day</h5>
+                    <button class="largeCar-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+            <div id="card7-MotorHome">
+                <img class="motorHome" src="img/motorHome.jpg" alt="motorHome">
+                <div id="card7-MotorHome-Content">
+                    <h3>Motor Home</h3>
+                    <h4>6 Seater</h4>
+                </div>
+                <div id="card7-MotorHome-Bottom">
+                    <h5 class="motorHome-price-Per-Day">$200.00 NZD / Day</h5>
+                    <button class="motorHome-Btn">Book Now</button>
+                </div>
+                
+            </div>
+
+
+            <div id="card7-Right">
+                <i class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div>
+    </section>
+
+
+
+    <!-- MOTORBIKE PAYMENT -->
+    <!-- MOTORBIKE BOOKING -->
+    <section class="motorbike-Booking-Details">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="motorbikeGoBackToSearch()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Booking Details</h1>
+        </div>
+
+        <div id="motorbike-Booking-Details-Info">
+            <div id="motorbike-Booking-Details-Container">
+                <form id="motorbike-Booking-Details-Form" action="#">
+                    <div id="motorbike-Booking-Details-Names">
+                        <div id="motorbike-FirstName">
+                            <label class="motorbike-Form-Heading" for="motorbike-First-Name-Input">First Name</label>
+                            <input class="motorbike-Form-Type" type="text" name="firstName" id="motorbike-First-Name-Input">
+                        </div>
+
+                        <div id="lastname">
+                            <label class="motorbike-Form-Heading" for="motorbike-Last-Name-Input">Last Name</label>
+                            <input class="motorbike-Form-Type" type="text" name="lastName" id="motorbike-Last-Name-Input">
+                        </div>
+                    </div>
+                    <label class="motorbike-Form-Heading" for="motorbike-Email-Input">Email</label>
+                    <input class="motorbike-Form-Type" type="email" name="email" id="motorbike-Email-Input">
+    
+                    <label class="motorbike-Form-Heading" for="motorbike-Phone-Input">Phone Number</label>
+                    <input class="motorbike-Form-Type" type="tel" name="phone" id="motorbike-Phone-Input">
+    
+                </form>
+            </div>
+            
+
+            <div class="motorbike-Vehicle-Details-Container">
+                <div class="motorbike-Vehicle-Details">
+                    <div class="motorbike-Vehicle-Details-Top">
+                      <h5 class="motorbike-Booking-Container-Heading">Booking Summary</h5>
+                       <img class="motorbike-BookingSummary-Photo" src="img/motorbike.jpg" alt="motorbike">
+    
+                       <h5 class="motorbike-Small-Booking-Container-Heading">Motorbike</h5>
+                       <h6 class="vehicle-Type-Summary">1 Seater</h6>
+    
+                       <h5 class="motorbike-Small-Booking-Container-Heading">Price</h5>
+                       <h6 class="vehicle-Price-Summary">$109.00 NZD / Day</h6>
+    
+                       <h5 class="motorbike-Small-Booking-Container-Heading">Days</h5>
+                       <h6 class="motorbike-Days-Summary"></h6>
+    
+                       <h5 class="motorbike-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                       <h6 class="motorbike-Fuel-Summary"></h6>
+                    </div>
+    
+                    <div class="motorbike-Vehicle-Details-Bottom">
+                         <h6 class="motorbike-Bottom-Title">Grand Total</h6><h6 class="motorbike-Bottom-Grand-Total"></h6>
+                    </div>
+                    
+                </div>
+                <button onclick="motorbikeGoToPayment()" id="motorbike-Personal-Details-Btn">Payment</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- MOTORBIKE PAYMENT -->
+    <section class="motorbike-Payment-Details">
+      <img class="logoSide" src="img/logo.png" alt="logo">
+      <div class="questions">
+         <i onclick="motorbikeGoBackToPersonal()" class="fa-solid fa-arrow-left-long"></i>
+         <h1 class="questionsHeading">Payment Details</h1>
+      </div>
+
+     <div id="motorbike-Payment-Details-Info">
+        <div id="motorbike-Payment-Details-Container">
+            <form id="motorbike-Payment-Details-Form" action="#">
+                <div id="motorbike-Payment-Details-Options">
+                    <div id="motorbike-Credit-Card-Container">
+                        <div id="motorbike-Credit-Card">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Credit / Debit Card</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div id="motorbike-Laybuy-Container">
+                        <div id="motorbike-Laybuy">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Laybuy</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+                <label class="motorbike-Form-Heading" for="motorbike-Card-Number-Input">Card Number</label>
+                <input class="motorbike-Form-Type" type="text" name="CardNumber" id="motorbike-Card-Number-Input" required>
+
+                <label class="motorbike-Form-Heading" for="motorbike-Card-Name-Input">Name on card</label>
+                <input class="motorbike-Form-Type" type="text" name="cardName" id="motorbike-Card-Name-Input" required>
+
+                <div id="motorbike-Payment-Details-Bottom">
+                    <div id="motorbike-Expiry-Date">
+                        <label class="motorbike-Form-Heading" for="motorbike-Expiry-Date-Input">Expiry Date</label>
+                        <input class="motorbike-Form-Type" type="text" placeholder="MM / YY" name="expiryDate" id="motorbike-Expiry-Date-Input" required>
+                    </div>
+
+                    <div id="motorbike-CVV">
+                        <label class="motorbike-Form-Heading" for="motorbike-CVV-Input">CVV</label>
+                        <input class="motorbike-Form-Type" maxlength="3" type="text" name="CVV" id="motorbike-CVV-Input" required>
+                    </div>
+                </div>    
+            </form>
+        </div>
+        
+
+        <div class="motorbike-Vehicle-Details-Container">
+            <div class="motorbike-Vehicle-Details">
+                <div class="motorbike-Vehicle-Details-Top">
+                  <h5 class="motorbike-Booking-Container-Heading">Booking Summary</h5>
+                   <img class="motorbike-BookingSummary-Photo" src="img/motorbike.jpg" alt="motorbike">
+
+                   <h5 class="motorbike-Small-Booking-Container-Heading">Motorbike</h5>
+                   <h6 class="vehicle-Type-Summary">1 Seater</h6>
+
+                   <h5 class="motorbike-Small-Booking-Container-Heading">Price</h5>
+                   <h6 class="vehicle-Price-Summary">$109.00 NZD / Day</h6>
+
+                   <h5 class="motorbike-Small-Booking-Container-Heading">Days</h5>
+                   <h6 class="motorbike-Days-Summary"></h6>
+
+                   <h5 class="motorbike-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                   <h6 class="motorbike-Fuel-Summary"></h6>
+                </div>
+
+                <div class="motorbike-Vehicle-Details-Bottom">
+                     <h6 class="motorbike-Bottom-Title">Grand Total</h6><h6 class="motorbike-Bottom-Grand-Total"></h6>
+                </div>
+                
+            </div>
+            <button id="motorbike-Payment-Details-Btn">Confirm</button>
+        </div>
+     </div>    
+    </section>
+  
+<!-- MOTORBIKE CONFIRMATION -->    
+    <section class="motorbike-Booking-Confirmation">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div id="motorbike-Booking-Container">
+            <div id="motorbike-Final-Booking-Details-Heading">
+                <h1 id="motorbike-Final-Booking-Heading">Booking Confirmed!</h1>
+                <i onclick="goBackToWelcome()" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <p id="motorbike-Final-Booking-Details-Text">Your booking details will be emailed to you.</p>
+            <h2 id="motorbike-Final-Booking-Details-Small-Heading">Your booking details</h2>
+
+            <div id="motorbike-Final-Booking-Details">
+                <div class="motorbike-Personal-Details">
+                    <h3>Name</h3>
+                    <h4 id="motorbike-person-Name"></h4>
+
+                    <h3>Email</h3>
+                    <h4 id="motorbike-Email-Results"></h4>
+
+                    <h3>Phone Number</h3>
+                    <h4 id="motorbike-Phone-Number"></h4>
+
+                    <h3>Number of people</h3>
+                    <h4 id="motorbike-Booking-Quantity"></h4>
+                </div>
+
+                <div class="motorbike-Personal-Details">
+                    <h3>Vehicle Type</h3>
+                    <h4 id="motorbike-Car-Type-Final">Motorbike</h4>
+
+                    <h3>Price</h3>
+                    <h4 id="motorbike-Price"></h4>
+
+                    <h3>Days</h3>
+                    <h4 id="motorbike-Hire-Days"></h4>
+
+                    <h3>Fuel consumption</h3>
+                    <h4 id="motorbike-Fuel"></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- /MOTORBIKE -->
+
+    <!-- SMALL CAR PAYMENT -->
+    <!-- SMALL CAR BOOKING -->
+    <section class="small-Booking-Details">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="smallGoBackToSearch()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Booking Details</h1>
+        </div>
+
+        <div id="small-Booking-Details-Info">
+            <div id="small-Booking-Details-Container">
+                <form id="small-Booking-Details-Form" action="#">
+                    <div id="small-Booking-Details-Names">
+                        <div id="small-FirstName">
+                            <label class="small-Form-Heading" for="small-First-Name-Input">First Name</label>
+                            <input class="small-Form-Type" type="text" name="firstName" id="small-First-Name-Input">
+                        </div>
+
+                        <div id="small-Lastname">
+                            <label class="small-Form-Heading" for="small-Last-Name-Input">Last Name</label>
+                            <input class="small-Form-Type" type="text" name="lastName" id="small-Last-Name-Input">
+                        </div>
+                    </div>
+                    <label class="small-Form-Heading" for="small-Email-Input">Email</label>
+                    <input class="small-Form-Type" type="email" name="email" id="small-Email-Input">
+    
+                    <label class="small-Form-Heading" for="small-Phone-Input">Phone Number</label>
+                    <input class="small-Form-Type" type="tel" name="phone" id="small-Phone-Input">
+    
+    
+                </form>
+            </div>
+            
+
+            <div class="small-Vehicle-Details-Container">
+                <div class="small-Vehicle-Details">
+                    <div class="small-Vehicle-Details-Top">
+                      <h5 class="small-Booking-Container-Heading">Booking Summary</h5>
+                       <img class="small-BookingSummary-Photo" src="img/smallCar01.jpg" alt="smallCar01">
+    
+                       <h5 class="small-Small-Booking-Container-Heading">Small Car</h5>
+                       <h6 class="vehicle-Type-Summary">2 Seater</h6>
+    
+                       <h5 class="small-Small-Booking-Container-Heading">Price</h5>
+                       <h6 class="vehicle-Price-Summary">$129.00 NZD / Day</h6>
+    
+                       <h5 class="small-Small-Booking-Container-Heading">Days</h5>
+                       <h6 class="small-Days-Summary"></h6>
+    
+                       <h5 class="small-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                       <h6 class="small-Fuel-Summary"></h6>
+                    </div>
+    
+                    <div class="small-Vehicle-Details-Bottom">
+                         <h6 class="small-Bottom-Title">Grand Total</h6><h6 class="small-Bottom-Grand-Total"></h6>
+                    </div>
+                    
+                </div>
+                <button onclick="smallGoToPayment()" id="small-Personal-Details-Btn">Payment</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- SMALL CAR PAYMENT -->
+    <section class="small-Payment-Details">
+      <img class="logoSide" src="img/logo.png" alt="logo">
+      <div class="questions">
+         <i onclick="smallGoBackToPersonal()" class="fa-solid fa-arrow-left-long"></i>
+         <h1 class="questionsHeading">Payment Details</h1>
+      </div>
+
+     <div id="small-Payment-Details-Info">
+        <div id="small-Payment-Details-Container">
+            <form id="small-Payment-Details-Form" action="#">
+                <div id="small-Payment-Details-Options">
+                    <div id="small-Credit-Card-Container">
+                        <div id="small-Credit-Card">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Credit / Debit Card</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div id="small-Laybuy-Container">
+                        <div id="small-Laybuy">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Laybuy</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+                <label class="small-Form-Heading" for="small-Card-Number-Input">Card Number</label>
+                <input class="small-Form-Type" type="text" name="CardNumber" id="small-Card-Number-Input">
+
+                <label class="small-Form-Heading" for="small-Card-Name-Input">Name on card</label>
+                <input class="small-Form-Type" type="text" name="cardName" id="small-Card-Name-Input">
+
+                <div id="small-Payment-Details-Bottom">
+                    <div id="small-ExpiryDate">
+                        <label class="small-Form-Heading" for="small-Expiry-Date-Input">Expiry Date</label>
+                        <input class="small-Form-Type" type="text" name="expiryDate" placeholder="MM / YY" id="small-Expiry-Date-Input">
+                    </div>
+
+                    <div id="small-CVV">
+                        <label class="small-Form-Heading" for="small-CVV-Input">CVV</label>
+                        <input class="small-Form-Type" type="text" name="CVV" id="small-CVV-Input">
+                    </div>
+                </div>    
+            </form>
+        </div>
+        
+
+        <div class="small-Vehicle-Details-Container">
+            <div class="small-Vehicle-Details">
+                <div class="small-Vehicle-Details-Top">
+                  <h5 class="small-Booking-Container-Heading">Booking Summary</h5>
+                   <img class="small-BookingSummary-Photo" src="img/smallCar01.jpg" alt="smallCar01">
+
+                   <h5 class="small-Small-Booking-Container-Heading">Small Car</h5>
+                   <h6 class="vehicle-Type-Summary">2 Seater</h6>
+
+                   <h5 class="small-Small-Booking-Container-Heading">Price</h5>
+                   <h6 class="vehicle-Price-Summary">$129.00 NZD / Day</h6>
+
+                   <h5 class="small-Small-Booking-Container-Heading">Days</h5>
+                   <h6 class="small-Days-Summary"></h6>
+
+                   <h5 class="small-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                   <h6 class="small-Fuel-Summary"></h6>
+                </div>
+
+                <div class="small-Vehicle-Details-Bottom">
+                     <h6 class="small-Bottom-Title">Grand Total</h6><h6 class="small-Bottom-Grand-Total"></h6>
+                </div>
+                
+            </div>
+            <button id="small-Payment-Details-Btn">Confirm</button>
+        </div>
+     </div>    
+    </section>
+  
+<!--SMALL CAR CONFIRMATION -->    
+    <section class="small-Booking-Confirmation">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div id="small-Booking-Container">
+            <div id="small-Final-Booking-Details-Heading">
+                <h1 id="small-Final-Booking-Heading">Booking Confirmed!</h1>
+                <i onclick="goBackToWelcome()" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <p id="small-Final-Booking-Details-Text">Your booking details will be emailed to you.</p>
+            <h2 id="small-Final-Booking-Details-Small-Heading">Your booking details</h2>
+
+            <div id="small-Final-Booking-Details">
+                <div class="small-Personal-Details">
+                    <h3>Name</h3>
+                    <h4 id="small-person-Name"></h4>
+
+                    <h3>Email</h3>
+                    <h4 id="small-Email-Results"></h4>
+
+                    <h3>Phone Number</h3>
+                    <h4 id="small-Phone-Number"></h4>
+
+                    <h3>Number of people</h3>
+                    <h4 id="small-Booking-Quantity"></h4>
+                </div>
+
+                <div class="small-Personal-Details">
+                    <h3>Vehicle Type</h3>
+                    <h4 id="small-Car-Type-Final">Small Car</h4>
+
+                    <h3>Price</h3>
+                    <h4 id="small-Price"></h4>
+
+                    <h3>Days</h3>
+                    <h4 id="small-Hire-Days"></h4>
+
+                    <h3>Fuel consumption</h3>
+                    <h4 id="small-Fuel"></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- /SMALL CAR -->
+
+
+    <!-- LARGE CAR PAYMENT -->
+    <!-- LARGE CAR BOOKING -->
+    <section class="large-Booking-Details">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="largeGoBackToSearch()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Booking Details</h1>
+        </div>
+
+        <div id="large-Booking-Details-Info">
+            <div id="large-Booking-Details-Container">
+                <form id="large-Booking-Details-Form" action="#">
+                    <div id="large-Booking-Details-Names">
+                        <div id="large-FirstName">
+                            <label class="large-Form-Heading" for="large-First-Name-Input">First Name</label>
+                            <input class="large-Form-Type" type="text" name="firstName" id="large-First-Name-Input">
+                        </div>
+
+                        <div id="large-Lastname">
+                            <label class="large-Form-Heading" for="large-Last-Name-Input">Last Name</label>
+                            <input class="large-Form-Type" type="text" name="lastName" id="large-Last-Name-Input">
+                        </div>
+                    </div>
+                    <label class="large-Form-Heading" for="large-Email-Input">Email</label>
+                    <input class="large-Form-Type" type="email" name="email" id="large-Email-Input">
+    
+                    <label class="large-Form-Heading" for="large-Phone-Input">Phone Number</label>
+                    <input class="large-Form-Type" type="tel" name="phone" id="large-Phone-Input">
+    
+                   
+                </form>
+            </div>
+            
+
+            <div class="large-Vehicle-Details-Container">
+                <div class="large-Vehicle-Details">
+                    <div class="large-Vehicle-Details-Top">
+                      <h5 class="large-Booking-Container-Heading">Booking Summary</h5>
+                       <img class="large-BookingSummary-Photo" src="img/largeCar01.jpg" alt="largeCar01">
+    
+                       <h5 class="large-Small-Booking-Container-Heading">Large Car</h5>
+                       <h6 class="vehicle-Type-Summary">5 Seater</h6>
+    
+                       <h5 class="large-Small-Booking-Container-Heading">Price</h5>
+                       <h6 class="vehicle-Price-Summary">$144.00 NZD / Day</h6>
+    
+                       <h5 class="large-Small-Booking-Container-Heading">Days</h5>
+                       <h6 class="large-Days-Summary"></h6>
+    
+                       <h5 class="large-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                       <h6 class="large-Fuel-Summary"></h6>
+                    </div>
+    
+                    <div class="large-Vehicle-Details-Bottom">
+                         <h6 class="large-Bottom-Title">Grand Total</h6><h6 class="large-Bottom-Grand-Total"></h6>
+                    </div>
+                    
+                </div>
+                <button onclick="largeGoToPayment()" id="large-Personal-Details-Btn">Payment</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- LARGE CAR PAYMENT -->
+    <section class="large-Payment-Details">
+      <img class="logoSide" src="img/logo.png" alt="logo">
+      <div class="questions">
+         <i onclick="largeGoBackToPersonal()" class="fa-solid fa-arrow-left-long"></i>
+         <h1 class="questionsHeading">Payment Details</h1>
+      </div>
+
+     <div id="large-Payment-Details-Info">
+        <div id="large-Payment-Details-Container">
+            <form id="large-Payment-Details-Form" action="#">
+                <div id="large-Payment-Details-Options">
+                    <div id="large-Credit-Card-Container">
+                        <div id="large-Credit-Card">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Credit / Debit Card</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div id="large-Laybuy-Container">
+                        <div id="large-Laybuy">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Laybuy</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+                <label class="large-Form-Heading" for="large-Card-Number-Input">Card Number</label>
+                <input class="large-Form-Type" type="text" name="CardNumber" id="large-Card-Number-Input">
+
+                <label class="large-Form-Heading" for="large-Card-Name-Input">Name on card</label>
+                <input class="large-Form-Type" type="text" name="cardName" id="large-Card-Name-Input">
+
+                <div id="large-Payment-Details-Bottom">
+                    <div id="large-ExpiryDate">
+                        <label class="large-Form-Heading" for="large-Expiry-Date-Input">Expiry Date</label>
+                        <input class="large-Form-Type" type="text" name="expiryDate" placeholder="MM / YY" id="large-Expiry-Date-Input">
+                    </div>
+
+                    <div id="large-CVV">
+                        <label class="large-Form-Heading" for="large-CVV-Input">CVV</label>
+                        <input class="large-Form-Type" type="text" name="CVV" id="large-CVV-Input">
+                    </div>
+                </div>    
+            </form>
+        </div>
+        
+
+        <div class="large-Vehicle-Details-Container">
+            <div class="large-Vehicle-Details">
+                <div class="large-Vehicle-Details-Top">
+                  <h5 class="large-Booking-Container-Heading">Booking Summary</h5>
+                   <img class="large-BookingSummary-Photo" src="img/largeCar01.jpg" alt="largeCar01">
+
+                   <h5 class="large-Small-Booking-Container-Heading">Large Car</h5>
+                   <h6 class="vehicle-Type-Summary">5 Seater</h6>
+
+                   <h5 class="large-Small-Booking-Container-Heading">Price</h5>
+                   <h6 class="vehicle-Price-Summary">$144.00 NZD / Day</h6>
+
+                   <h5 class="large-Small-Booking-Container-Heading">Days</h5>
+                   <h6 class="large-Days-Summary"></h6>
+
+                   <h5 class="large-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                   <h6 class="large-Fuel-Summary"></h6>
+                </div>
+
+                <div class="large-Vehicle-Details-Bottom">
+                     <h6 class="large-Bottom-Title">Grand Total</h6><h6 class="large-Bottom-Grand-Total"></h6>
+                </div>
+                
+            </div>
+            <button onclick="largeGoToPayment()" id="large-Payment-Details-Btn">Confirm</button>
+        </div>
+     </div>    
+    </section>
+  
+<!--LARGE CAR CONFIRMATION -->    
+    <section class="large-Booking-Confirmation">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div id="large-Booking-Container">
+            <div id="large-Final-Booking-Details-Heading">
+                <h1 id="large-Final-Booking-Heading">Booking Confirmed!</h1>
+                <i onclick="goBackToWelcome()" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <p id="large-Final-Booking-Details-Text">Your booking details will be emailed to you.</p>
+            <h2 id="large-Final-Booking-Details-Small-Heading">Your booking details</h2>
+
+            <div id="large-Final-Booking-Details">
+                <div class="large-Personal-Details">
+                    <h3>Name</h3>
+                    <h4 id="large-person-Name"></h4>
+
+                    <h3>Email</h3>
+                    <h4 id="large-Email-Results"></h4>
+
+                    <h3>Phone Number</h3>
+                    <h4 id="large-Phone-Number"></h4>
+
+                    <h3>Number of people</h3>
+                    <h4 id="large-Booking-Quantity"></h4>
+                </div>
+
+                <div class="large-Personal-Details">
+                    <h3>Vehicle Type</h3>
+                    <h4 id="large-Car-Type-Final">Small Car</h4>
+
+                    <h3>Price</h3>
+                    <h4 id="large-Price"></h4>
+
+                    <h3>Days</h3>
+                    <h4 id="large-Hire-Days"></h4>
+
+                    <h3>Fuel consumption</h3>
+                    <h4 id="large-Fuel"></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- /LARGE CAR-->
+
+
+    <!-- MOTOR HOME PAYMENT -->
+    <!-- MOTOR HOME BOOKING -->
+    <section class="home-Booking-Details">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div class="questions">
+            <i onclick="homeGoBackToSearch()" class="fa-solid fa-arrow-left-long"></i>
+            <h1 class="questionsHeading">Booking Details</h1>
+        </div>
+
+        <div id="home-Booking-Details-Info">
+            <div id="home-Booking-Details-Container">
+                <form id="home-Booking-Details-Form" action="#">
+                    <div id="home-Booking-Details-Names">
+                        <div id="home-FirstName">
+                            <label class="home-Form-Heading" for="home-First-Name-Input">First Name</label>
+                            <input class="home-Form-Type" type="text" name="firstName" id="home-First-Name-Input">
+                        </div>
+
+                        <div id="home-Lastname">
+                            <label class="home-Form-Heading" for="home-Last-Name-Input">Last Name</label>
+                            <input class="home-Form-Type" type="text" name="lastName" id="home-Last-Name-Input">
+                        </div>
+                    </div>
+                    <label class="home-Form-Heading" for="home-Email-Input">Email</label>
+                    <input class="home-Form-Type" type="email" name="email" id="home-Email-Input">
+    
+                    <label class="home-Form-Heading" for="home-Phone-Input">Phone Number</label>
+                    <input class="home-Form-Type" type="tel" name="phone" id="home-Phone-Input">
+                    
+                </form>
+            </div>
+            
+
+            <div class="home-Vehicle-Details-Container">
+                <div class="home-Vehicle-Details">
+                    <div class="home-Vehicle-Details-Top">
+                      <h5 class="home-Booking-Container-Heading">Booking Summary</h5>
+                       <img class="home-BookingSummary-Photo" src="img/motorHome.jpg" alt="motorHome">
+    
+                       <h5 class="home-Small-Booking-Container-Heading">Large Car</h5>
+                       <h6 class="vehicle-Type-Summary">5 Seater</h6>
+    
+                       <h5 class="home-Small-Booking-Container-Heading">Price</h5>
+                       <h6 class="vehicle-Price-Summary">$144.00 NZD / Day</h6>
+    
+                       <h5 class="home-Small-Booking-Container-Heading">Days</h5>
+                       <h6 class="home-Days-Summary"></h6>
+    
+                       <h5 class="home-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                       <h6 class="home-Fuel-Summary"></h6>
+                    </div>
+    
+                    <div class="home-Vehicle-Details-Bottom">
+                         <h6 class="home-Bottom-Title">Grand Total</h6><h6 class="home-Bottom-Grand-Total"></h6>
+                    </div>
+                    
+                </div>
+                <button onclick="homeGoToPayment()" id="home-Personal-Details-Btn">Payment</button>
+            </div>
+        </div>
+    </section>
+    
+    <!-- MOTOR HOME PAYMENT -->
+    <section class="home-Payment-Details">
+      <img class="logoSide" src="img/logo.png" alt="logo">
+      <div class="questions">
+         <i onclick="homeGoBackToPersonal()" class="fa-solid fa-arrow-left-long"></i>
+         <h1 class="questionsHeading">Payment Details</h1>
+      </div>
+
+     <div id="home-Payment-Details-Info">
+        <div id="home-Payment-Details-Container">
+            <form id="home-Payment-Details-Form" action="#">
+                <div id="home-Payment-Details-Options">
+                    <div id="home-Credit-Card-Container">
+                        <div id="home-Credit-Card">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Credit / Debit Card</h1>
+                        </div>
+                        
+                    </div>
+
+                    <div id="home-Laybuy-Container">
+                        <div id="home-Laybuy">
+                            <i class="fa-solid fa-circle"></i>
+                            <h1>Laybuy</h1>
+                        </div>
+                        
+                    </div>
+                </div>
+                <label class="home-Form-Heading" for="home-Card-Number-Input">Card Number</label>
+                <input class="home-Form-Type" type="text" name="CardNumber" id="home-Card-Number-Input">
+
+                <label class="home-Form-Heading" for="home-Card-Name-Input">Name on card</label>
+                <input class="home-Form-Type" type="text" name="cardName" id="home-Card-Name-Input">
+
+                <div id="home-Payment-Details-Bottom">
+                    <div id="home-ExpiryDate">
+                        <label class="home-Form-Heading" for="home-Expiry-Date-Input">Expiry Date</label>
+                        <input class="home-Form-Type" type="text" name="expiryDate" placeholder="MM / YY" id="home-Expiry-Date-Input">
+                    </div>
+
+                    <div id="home-CVV">
+                        <label class="home-Form-Heading" for="home-CVV-Input">CVV</label>
+                        <input class="home-Form-Type" type="text" name="CVV" id="home-CVV-Input">
+                    </div>
+                </div>    
+            </form>
+        </div>
+        
+
+        <div class="home-Vehicle-Details-Container">
+            <div class="home-Vehicle-Details">
+                <div class="home-Vehicle-Details-Top">
+                  <h5 class="home-Booking-Container-Heading">Booking Summary</h5>
+                   <img class="home-BookingSummary-Photo" src="img/motorHome.jpg" alt="motorHome">
+
+                   <h5 class="home-Small-Booking-Container-Heading">Large Car</h5>
+                   <h6 class="vehicle-Type-Summary">5 Seater</h6>
+
+                   <h5 class="home-Small-Booking-Container-Heading">Price</h5>
+                   <h6 class="vehicle-Price-Summary">$144.00 NZD / Day</h6>
+
+                   <h5 class="home-Small-Booking-Container-Heading">Days</h5>
+                   <h6 class="home-Days-Summary"></h6>
+
+                   <h5 class="home-Small-Booking-Container-Heading">Fuel Consumption</h5>
+                   <h6 class="home-Fuel-Summary"></h6>
+                </div>
+
+                <div class="home-Vehicle-Details-Bottom">
+                     <h6 class="home-Bottom-Title">Grand Total</h6><h6 class="home-Bottom-Grand-Total"></h6>
+                </div>
+                
+            </div>
+            <button onclick="homeGoToPayment()" id="home-Payment-Details-Btn">Confirm</button>
+        </div>
+     </div>    
+    </section>
+  
+<!--MOTOR HOME CONFIRMATION -->    
+    <section class="home-Booking-Confirmation">
+        <img class="logoSide" src="img/logo.png" alt="logo">
+        <div id="home-Booking-Container">
+            <div id="home-Final-Booking-Details-Heading">
+                <h1 id="home-Final-Booking-Heading">Booking Confirmed!</h1>
+                <i onclick="goBackToWelcome()" class="fa-solid fa-xmark"></i>
+            </div>
+
+            <p id="home-Final-Booking-Details-Text">Your booking details will be emailed to you.</p>
+            <h2 id="home-Final-Booking-Details-Small-Heading">Your booking details</h2>
+
+            <div id="home-Final-Booking-Details">
+                <div class="home-Personal-Details">
+                    <h3>Name</h3>
+                    <h4 id="home-person-Name"></h4>
+
+                    <h3>Email</h3>
+                    <h4 id="home-Email-Results"></h4>
+
+                    <h3>Phone Number</h3>
+                    <h4 id="home-Phone-Number"></h4>
+
+                    <h3>Number of people</h3>
+                    <h4 id="home-Booking-Quantity"></h4>
+                </div>
+
+                <div class="home-Personal-Details">
+                    <h3>Vehicle Type</h3>
+                    <h4 id="home-Car-Type-Final">Small Car</h4>
+
+                    <h3>Price</h3>
+                    <h4 id="home-Price"></h4>
+
+                    <h3>Days</h3>
+                    <h4 id="home-Hire-Days"></h4>
+
+                    <h3>Fuel consumption</h3>
+                    <h4 id="home-Fuel"></h4>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- /MOTOR HOME -->
+
+
+    
+
+<script src="js/toastr.js"></script>
+<script src="main.js"></script>
+
+<script>
+    toastr.options.closeButton = true;
+  </script>
+
+</body>
+</html>
